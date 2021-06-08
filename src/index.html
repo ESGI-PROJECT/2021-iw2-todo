@@ -12,6 +12,13 @@
       min-height: 100vh;
     }
   </style>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/service-worker.js', {
+        scope: '/'
+      });
+    }
+  </script>
 </head>
 <body>
   <task-app></task-app>

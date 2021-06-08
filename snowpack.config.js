@@ -3,6 +3,9 @@
 
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
+  env: {
+    API_URL: 'http://localhost:3000',
+  },
   mount: {
     'src': '/'
   },
